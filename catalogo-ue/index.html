@@ -50,10 +50,10 @@ header.bar{
   background:rgba(12,12,14,.72);backdrop-filter:blur(14px);
   border-bottom:1px solid var(--line);
 }
-.bar-inner{display:flex;align-items:center;justify-content:space-between;height:70px}
+.bar-inner{display:flex;align-items:center;justify-content:space-between;height:84px}
 .brand{display:flex;align-items:center;gap:13px}
 .brand .chip{display:flex;align-items:center}
-.brand .chip img{height:40px;width:auto;border-radius:8px}
+.brand .chip img{height:50px;width:auto;border-radius:8px}
 .brand .wm{line-height:1.05}
 .brand .wm b{font-family:var(--disp);font-weight:700;font-size:.95rem;letter-spacing:-.01em;display:block}
 .brand .wm span{font-family:var(--mono);font-size:.58rem;letter-spacing:.22em;color:var(--fog);text-transform:uppercase}
@@ -94,7 +94,7 @@ nav.links a:hover::after,nav.links a.active::after{width:100%}
 .hstat .l{font-family:var(--mono);font-size:.63rem;letter-spacing:.13em;text-transform:uppercase;color:var(--fog);margin-top:13px;line-height:1.45}
 .hstat.accent{background:linear-gradient(135deg,var(--red),var(--red-deep));border-color:transparent}
 .hstat.accent .n,.hstat.accent .l{color:#fff}
-.hstat.accent .n small{color:rgba(255,255,255,.85)}
+.hstat.accent .n small{color:rgb(255, 255, 255)}
 @media(max-width:900px){.hero-stats{max-width:none;aspect-ratio:auto}.hstat{padding:22px}.hstat .n{font-size:2.1rem}}
 
 /* ---------- nosotros ---------- */
@@ -108,13 +108,15 @@ nav.links a:hover::after,nav.links a.active::after{width:100%}
 .pillar p{color:var(--fog);font-size:.92rem;line-height:1.55}
 
 /* ---------- linea / catalog ---------- */
-.cat-nav{position:sticky;top:70px;z-index:40;background:rgba(12,12,14,.82);backdrop-filter:blur(12px);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cat-nav{position:sticky;top:84px;z-index:40;background:rgba(12,12,14,.82);backdrop-filter:blur(12px);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .cat-nav-inner{display:flex;gap:8px;overflow-x:auto;padding:14px 0;scrollbar-width:none}
 .cat-nav-inner::-webkit-scrollbar{display:none}
 .cat-nav a{white-space:nowrap;font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--paper-dim);border:1px solid var(--line);padding:8px 15px;border-radius:100px;transition:.2s}
 .cat-nav a:hover{border-color:var(--red);color:var(--paper)}
 .group{padding-top:78px}
 #linea{padding-bottom:56px}
+#linea .section-head{margin-bottom:24px}
+#g-vestir{padding-top:36px}
 .group-head{display:flex;align-items:baseline;gap:18px;margin-bottom:34px;border-bottom:1px solid var(--line);padding-bottom:20px}
 .group-head .gi{font-family:var(--mono);color:var(--red);font-size:.85rem;font-weight:700}
 .group-head h3{font-size:clamp(1.5rem,3vw,2.1rem)}
@@ -146,7 +148,7 @@ nav.links a:hover::after,nav.links a.active::after{width:100%}
 /* ---------- empresas / trust wall ---------- */
 .trust{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .trust .section-head{margin-bottom:44px}
-.empresas-img{border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.empresas-img{border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 0 90px 12px rgba(224,36,43,.32)}
 .empresas-img img{display:block;width:100%;height:auto}
 .trust{padding-bottom:60px}
 
@@ -167,6 +169,8 @@ footer{background:#08080A;border-top:1px solid var(--line);padding:74px 0 40px}
 .foot-col a:hover{color:var(--red)}
 .foot-col svg{width:16px;height:16px;fill:currentColor;flex-shrink:0;opacity:.8}
 .foot-bottom{margin-top:56px;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-family:var(--mono);font-size:.68rem;letter-spacing:.06em;color:var(--fog)}
+.foot-legal{display:flex;flex-direction:column;gap:6px}
+.foot-legal .disclaimer{font-size:.6rem;opacity:.6}
 
 /* ---------- reveal ---------- */
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
@@ -182,7 +186,7 @@ footer{background:#08080A;border-top:1px solid var(--line);padding:74px 0 40px}
 @media(max-width:640px){
   .wrap{padding:0 20px}
   .section{padding:78px 0}
-  nav.links{position:fixed;inset:70px 0 auto 0;background:var(--ink);flex-direction:column;gap:0;padding:10px 20px 24px;border-bottom:1px solid var(--line);transform:translateY(-120%);transition:transform .3s;align-items:stretch}
+  nav.links{position:fixed;inset:84px 0 auto 0;background:var(--ink);flex-direction:column;gap:0;padding:10px 20px 24px;border-bottom:1px solid var(--line);transform:translateY(-120%);transition:transform .3s;align-items:stretch}
   nav.links.open{transform:none}
   nav.links a{padding:15px 0;border-bottom:1px solid var(--line)}
   nav.links .wa{margin-top:16px;justify-content:center}
@@ -212,6 +216,7 @@ footer{background:#08080A;border-top:1px solid var(--line);padding:74px 0 40px}
 .wa-float:hover{background:var(--red-deep);transform:translateY(-2px)}
 .wa-float svg{width:28px;height:28px;fill:#fff}
 @media(max-width:640px){.wa-float{width:52px;height:52px;right:16px;bottom:16px}}
+@media(min-width:769px){.wa-float{width:68px;height:68px}.wa-float svg{width:34px;height:34px}}
 
 /* ---------- por qué elegirnos ---------- */
 .why-head{max-width:780px;margin-bottom:44px}
@@ -441,9 +446,6 @@ footer{background:#08080A;border-top:1px solid var(--line);padding:74px 0 40px}
         <h6>Teléfonos</h6>
         <a href="tel:+5493624268829"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>3625 390912</a>
         <a href="tel:+5493624268836"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>3624 268836</a>
-        <a class="wa js-wa" href="https://wa.me/5493624268829" target="_blank" rel="noopener" style="margin-top:8px;width:fit-content">
-          <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.5-.7-2.4-1.3-3.4-3-.3-.4.3-.4.7-1.3.1-.2 0-.4 0-.5 0-.1-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.9.9-1.1 2-1.1 2.1 0 1.3.9 2.5 1.1 2.7.1.2 1.9 3 4.7 4.1 2.3 1 2.6.8 3.1.7.5 0 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2z"/></svg>WhatsApp
-        </a>
       </div>
       <div class="foot-col reveal">
         <h6>Redes sociales</h6>
@@ -453,7 +455,10 @@ footer{background:#08080A;border-top:1px solid var(--line);padding:74px 0 40px}
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 Uniformes Empresariales del NEA</span>
+      <div class="foot-legal">
+        <span>© 2026 Uniformes Empresariales del NEA</span>
+        <span class="disclaimer">Las imágenes son a modo de referencia y pueden no coincidir exactamente con el producto final.</span>
+      </div>
       <span>Catálogo · Nueva colección</span>
     </div>
   </div>
@@ -482,7 +487,7 @@ footer{background:#08080A;border-top:1px solid var(--line);padding:74px 0 40px}
 </script>
 
 <a class="wa-float js-wa" href="https://wa.me/5493624268829" target="_blank" rel="noopener" aria-label="WhatsApp">
-  <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.5-.7-2.4-1.3-3.4-3-.3-.4.3-.4.7-1.3.1-.2 0-.4 0-.5 0-.1-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.9.9-1.1 2-1.1 2.1 0 1.3.9 2.5 1.1 2.7.1.2 1.9 3 4.7 4.1 2.3 1 2.6.8 3.1.7.5 0 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2z"/></svg>
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/></svg>
 </a>
 <script>
   /* ====== TU NÚMERO DE WHATSAPP ======
