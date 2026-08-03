@@ -146,11 +146,8 @@ nav.links a:hover::after,nav.links a.active::after{width:100%}
 /* ---------- empresas / trust wall ---------- */
 .trust{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .trust .section-head{margin-bottom:44px}
-.logo-wall{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden}
-.logo-cell{background:var(--panel2);aspect-ratio:16/9;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;transition:background .2s}
-.logo-cell:hover{background:#1d1d23}
-.logo-cell .box{width:46px;height:46px;border:1px dashed var(--line-strong);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:var(--mono);color:var(--fog);font-size:.7rem}
-.logo-cell .lbl{font-family:var(--mono);font-size:.6rem;letter-spacing:.14em;color:var(--fog);text-transform:uppercase}
+.empresas-img{border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.empresas-img img{display:block;width:100%;height:auto}
 .trust{padding-bottom:60px}
 
 /* ---------- cta band ---------- */
@@ -179,10 +176,8 @@ footer{background:#08080A;border-top:1px solid var(--line);padding:74px 0 40px}
 /* ---------- responsive ---------- */
 @media(max-width:900px){
   .hero-grid{grid-template-columns:1fr}
-  .hero-media{order:-1}
   .about{grid-template-columns:1fr;gap:40px}
   .foot-grid{grid-template-columns:1fr 1fr}
-  .logo-wall{grid-template-columns:repeat(3,1fr)}
 }
 @media(max-width:640px){
   .wrap{padding:0 20px}
@@ -194,7 +189,6 @@ footer{background:#08080A;border-top:1px solid var(--line);padding:74px 0 40px}
   .burger{display:flex}
   .pillars{grid-template-columns:1fr}
   .foot-grid{grid-template-columns:1fr}
-  .logo-wall{grid-template-columns:repeat(2,1fr)}
   .group-head{flex-wrap:wrap;gap:8px}
   .group-head .gsub{margin-left:0;width:100%}
 }
@@ -402,55 +396,8 @@ footer{background:#08080A;border-top:1px solid var(--line);padding:74px 0 40px}
       <h2>Empresas que confiaron en nosotros</h2>
       <p>Más de 100 empresas del NEA eligieron nuestros uniformes para representar su marca. Estas son algunas de ellas.</p>
     </div>
-    <div class="logo-wall reveal">
-      <div class="logo-cell">
-          <!-- LOGO CLIENTE 01: poné  <img src="img/clientes/cliente-01.png" alt="Nombre empresa">  y borrá las dos líneas de abajo -->
-          <div class="box">01</div><span class="lbl">Logo cliente</span>
-        </div>
-      <div class="logo-cell">
-          <!-- LOGO CLIENTE 02: poné  <img src="img/clientes/cliente-02.png" alt="Nombre empresa">  y borrá las dos líneas de abajo -->
-          <div class="box">02</div><span class="lbl">Logo cliente</span>
-        </div>
-      <div class="logo-cell">
-          <!-- LOGO CLIENTE 03: poné  <img src="img/clientes/cliente-03.png" alt="Nombre empresa">  y borrá las dos líneas de abajo -->
-          <div class="box">03</div><span class="lbl">Logo cliente</span>
-        </div>
-      <div class="logo-cell">
-          <!-- LOGO CLIENTE 04: poné  <img src="img/clientes/cliente-04.png" alt="Nombre empresa">  y borrá las dos líneas de abajo -->
-          <div class="box">04</div><span class="lbl">Logo cliente</span>
-        </div>
-      <div class="logo-cell">
-          <!-- LOGO CLIENTE 05: poné  <img src="img/clientes/cliente-05.png" alt="Nombre empresa">  y borrá las dos líneas de abajo -->
-          <div class="box">05</div><span class="lbl">Logo cliente</span>
-        </div>
-      <div class="logo-cell">
-          <!-- LOGO CLIENTE 06: poné  <img src="img/clientes/cliente-06.png" alt="Nombre empresa">  y borrá las dos líneas de abajo -->
-          <div class="box">06</div><span class="lbl">Logo cliente</span>
-        </div>
-      <div class="logo-cell">
-          <!-- LOGO CLIENTE 07: poné  <img src="img/clientes/cliente-07.png" alt="Nombre empresa">  y borrá las dos líneas de abajo -->
-          <div class="box">07</div><span class="lbl">Logo cliente</span>
-        </div>
-      <div class="logo-cell">
-          <!-- LOGO CLIENTE 08: poné  <img src="img/clientes/cliente-08.png" alt="Nombre empresa">  y borrá las dos líneas de abajo -->
-          <div class="box">08</div><span class="lbl">Logo cliente</span>
-        </div>
-      <div class="logo-cell">
-          <!-- LOGO CLIENTE 09: poné  <img src="img/clientes/cliente-09.png" alt="Nombre empresa">  y borrá las dos líneas de abajo -->
-          <div class="box">09</div><span class="lbl">Logo cliente</span>
-        </div>
-      <div class="logo-cell">
-          <!-- LOGO CLIENTE 10: poné  <img src="img/clientes/cliente-10.png" alt="Nombre empresa">  y borrá las dos líneas de abajo -->
-          <div class="box">10</div><span class="lbl">Logo cliente</span>
-        </div>
-      <div class="logo-cell">
-          <!-- LOGO CLIENTE 11: poné  <img src="img/clientes/cliente-11.png" alt="Nombre empresa">  y borrá las dos líneas de abajo -->
-          <div class="box">11</div><span class="lbl">Logo cliente</span>
-        </div>
-      <div class="logo-cell">
-          <!-- LOGO CLIENTE 12: poné  <img src="img/clientes/cliente-12.png" alt="Nombre empresa">  y borrá las dos líneas de abajo -->
-          <div class="box">12</div><span class="lbl">Logo cliente</span>
-        </div>
+    <div class="empresas-img reveal">
+      <img src="img/empresas.jpg" alt="Empresas que confiaron en nosotros">
     </div>
   </div>
 </section>
