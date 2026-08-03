@@ -193,6 +193,18 @@ footer{background:#08080A;border-top:1px solid var(--line);padding:74px 0 40px}
   .group-head .gsub{margin-left:0;width:100%}
 }
 
+/* ---------- mobile-only: reorden visual + ocultar stats (no toca desktop) ---------- */
+@media(max-width:768px){
+  body{display:flex;flex-direction:column}
+  .hero{order:1}
+  #empresas{order:2}
+  #nosotros{order:3}
+  #linea{order:4}
+  .band{order:5}
+  footer{order:6}
+  .hero-media{display:none}
+}
+
 .wa-float{position:fixed;right:20px;bottom:20px;z-index:60;width:56px;height:56px;border-radius:50%;
   background:var(--red);display:flex;align-items:center;justify-content:center;
   box-shadow:0 8px 24px rgba(0,0,0,.4);transition:transform .2s,background .2s}
