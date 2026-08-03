@@ -1,0 +1,4 @@
+Poné acá los logos de las empresas clientes.
+Nombralos: cliente-01.png, cliente-02.png, ... hasta cliente-12.png
+Ideal: PNG con fondo transparente. Después seguí el comentario de cada
+recuadro en index.html (sección "Empresas que confiaron en nosotros").

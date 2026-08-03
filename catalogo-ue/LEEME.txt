@@ -1,0 +1,34 @@
+CATÁLOGO WEB · UNIFORMES EMPRESARIALES DEL NEA
+================================================
+
+CÓMO ABRIRLO EN VS CODE
+1. Abrí Visual Studio Code.
+2. Archivo > Abrir carpeta... > elegí esta carpeta (catalogo-ue).
+3. (Recomendado) Instalá la extensión "Live Server":
+   panel Extensiones (Ctrl+Shift+X) > buscá "Live Server" > Install.
+4. Clic derecho sobre index.html > "Open with Live Server".
+   Se abre en el navegador y se actualiza solo cada vez que guardás.
+
+QUÉ PODÉS CAMBIAR
+• LOGO DE LA MARCA
+  Reemplazá el archivo  img/logo.png  por tu logo.
+  Usá el MISMO nombre (logo.png). Ideal PNG con fondo transparente.
+
+• FOTOS DE PRODUCTO
+  Están en la carpeta /img (camisa_hombre.jpg, chomba.jpg, etc.).
+  Para cambiar una foto, reemplazá el archivo por otro con el mismo nombre.
+
+• LOGOS DE EMPRESAS CLIENTES (sección "Empresas que confiaron")
+  1. Guardá los logos en /img/clientes con nombres cliente-01.png ... cliente-12.png
+  2. En index.html, en cada recuadro vas a ver un comentario que te dice
+     exactamente qué línea poner y qué borrar.
+
+• NÚMERO DE WHATSAPP
+  Al final de index.html está la línea:  var WHATSAPP = "5493625390912";
+  Cambiá el número (formato: 54 + 9 + característica sin 0 + número sin 15).
+  Ese número se aplica solo a TODOS los botones de WhatsApp (arriba, el
+  botón flotante verde/rojo de la esquina, el CTA y el footer).
+
+CÓMO PUBLICARLO (para el QR)
+  Subí TODA la carpeta a tu hosting (Netlify, Vercel, tu dominio, etc.).
+  El archivo principal es index.html. Después apuntá el QR a esa dirección.
