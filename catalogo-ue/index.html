@@ -50,10 +50,14 @@ header.bar{
   background:rgba(12,12,14,.72);backdrop-filter:blur(14px);
   border-bottom:1px solid var(--line);
 }
-.bar-inner{display:flex;align-items:center;justify-content:space-between;height:84px}
+.bar-inner{display:flex;align-items:center;justify-content:space-between;height:70px}
 .brand{display:flex;align-items:center;gap:13px}
 .brand .chip{display:flex;align-items:center}
-.brand .chip img{height:50px;width:auto;border-radius:8px}
+.brand .chip img{height:40px;width:auto;border-radius:8px}
+@media(min-width:769px){
+  .bar-inner{height:84px}
+  .brand .chip img{height:50px}
+}
 .brand .wm{line-height:1.05}
 .brand .wm b{font-family:var(--disp);font-weight:700;font-size:.95rem;letter-spacing:-.01em;display:block}
 .brand .wm span{font-family:var(--mono);font-size:.58rem;letter-spacing:.22em;color:var(--fog);text-transform:uppercase}
@@ -108,7 +112,8 @@ nav.links a:hover::after,nav.links a.active::after{width:100%}
 .pillar p{color:var(--fog);font-size:.92rem;line-height:1.55}
 
 /* ---------- linea / catalog ---------- */
-.cat-nav{position:sticky;top:84px;z-index:40;background:rgba(12,12,14,.82);backdrop-filter:blur(12px);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cat-nav{position:sticky;top:70px;z-index:40;background:rgba(12,12,14,.82);backdrop-filter:blur(12px);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+@media(min-width:769px){.cat-nav{top:84px}}
 .cat-nav-inner{display:flex;gap:8px;overflow-x:auto;padding:14px 0;scrollbar-width:none}
 .cat-nav-inner::-webkit-scrollbar{display:none}
 .cat-nav a{white-space:nowrap;font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--paper-dim);border:1px solid var(--line);padding:8px 15px;border-radius:100px;transition:.2s}
@@ -186,7 +191,7 @@ footer{background:#08080A;border-top:1px solid var(--line);padding:74px 0 40px}
 @media(max-width:640px){
   .wrap{padding:0 20px}
   .section{padding:78px 0}
-  nav.links{position:fixed;inset:84px 0 auto 0;background:var(--ink);flex-direction:column;gap:0;padding:10px 20px 24px;border-bottom:1px solid var(--line);transform:translateY(-120%);transition:transform .3s;align-items:stretch}
+  nav.links{position:fixed;inset:70px 0 auto 0;background:var(--ink);flex-direction:column;gap:0;padding:10px 20px 24px;border-bottom:1px solid var(--line);transform:translateY(-120%);transition:transform .3s;align-items:stretch}
   nav.links.open{transform:none}
   nav.links a{padding:15px 0;border-bottom:1px solid var(--line)}
   nav.links .wa{margin-top:16px;justify-content:center}
