@@ -214,6 +214,7 @@ footer{background:#08080A;border-top:1px solid var(--line);padding:74px 0 40px}
   .hero-media{display:none}
   .hero-grid{min-height:auto}
   .hero-copy{padding-top:48px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:12px}
 }
 
 .wa-float{position:fixed;right:20px;bottom:20px;z-index:60;width:56px;height:56px;border-radius:50%;
@@ -421,7 +422,10 @@ footer{background:#08080A;border-top:1px solid var(--line);padding:74px 0 40px}
       <p>Más de 100 empresas del NEA eligieron nuestros uniformes para representar su marca. Estas son algunas de ellas.</p>
     </div>
     <div class="empresas-img reveal">
-      <img src="img/empresas.jpg" alt="Empresas que confiaron en nosotros">
+      <picture>
+        <source media="(max-width:768px)" srcset="img/Logos-celular.jpeg">
+        <img src="img/empresas.jpg" alt="Empresas que confiaron en nosotros">
+      </picture>
     </div>
   </div>
 </section>
