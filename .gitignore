@@ -1,0 +1,15 @@
+# Dependencias (Playwright, solo para capturas)
+node_modules/
+
+# Capturas y archivos temporales
+_tmp_*
+*.tmp
+
+# Sistema / editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+
+# Config local de Claude Code
+.claude/settings.local.json
